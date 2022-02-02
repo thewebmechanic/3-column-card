@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Variables */
+/* End of Variables */
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.CardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5rem 1.7rem 1rem 1.7rem;
+  min-width: 230px;
+}
+
+@media only screen and (min-width: 450px) {
+  .CardContainer {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .CardContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-width: 872px;
+    margin: auto;
+    margin-top: 15rem;
+  }
+}
+
+.SedanSection {
+  background-color: #e38826;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 2.8rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .SedanSection {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+.SuvSection {
+  background-color: #006970;
+  padding: 2.8rem;
+}
+
+.LuxurySection {
+  background-color: #004241;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 2.8rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .LuxurySection {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.SectionIcon {
+  width: 4rem;
+  height: 2.5rem;
+}
+
+.SectionHeader {
+  margin: 2rem 0 0 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.6rem;
+  color: #f2f2f2;
+}
+
+.SectionDescription {
+  margin: 2rem 0 0 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7rem;
+  text-align: left;
+}
+
+.SedanButton {
+  margin: 2rem 0 0 0;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: 0px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  color: #e38826;
+}
+
+@media only screen and (min-width: 1440px) {
+  .SedanButton {
+    margin-top: 7rem;
+  }
+}
+
+.SedanButton:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+}
+
+.SuvButton {
+  margin: 2rem 0 0 0;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: 0px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  color: #006970;
+}
+
+@media only screen and (min-width: 1440px) {
+  .SuvButton {
+    margin-top: 7rem;
+  }
+}
+
+.SuvButton:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+}
+
+.LuxuryButton {
+  margin: 2rem 0 0 0;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: 0px;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  color: #004241;
+}
+
+@media only screen and (min-width: 1440px) {
+  .LuxuryButton {
+    margin-top: 7rem;
+  }
+}
+
+.LuxuryButton:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  cursor: pointer;
+}
+
+.accent {
+  color: #e38826;
+}
+
+.attribution {
+  display: block;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,184 @@
+
+  
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Variables */
+$orange: hsl(31, 77%, 52%);
+$light-cyan: hsl(184, 100%, 22%);
+$dark-cyan: hsl(179, 100%, 13%);
+$paragraph: hsla(0, 0%, 100%, 0.75); // transparent white
+$headings: hsl(0, 0%, 95%); // very light gray for heading, bg, buttons
+$heading-font: 'Big Shoulders Display', cursive; // font-family
+$description-font: 'Lexend Deca', sans-serif; // font-family
+$default-font-size: 15px; // font-size
+
+/* End of Variables */
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: $default-font-size;
+    font-family: $description-font;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.CardContainer { 
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 1.7rem 1rem 1.7rem;
+  min-width: 230px;
+
+  @media only screen and (min-width: 450px) {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    min-width: 872px;
+    margin: auto;
+    margin-top: 15rem;
+  }
+
+}
+
+.SedanSection {
+  background-color: $orange;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 2.8rem;
+  @media only screen and (min-width: 1440px) {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+.SuvSection {
+  background-color: $light-cyan;
+  padding: 2.8rem;
+}
+
+.LuxurySection {
+  background-color: $dark-cyan;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 2.8rem;
+  @media only screen and (min-width: 1440px) {
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.SectionIcon {
+  width: 4rem;
+  height: 2.5rem;
+}
+
+.SectionHeader {
+  margin: 2rem 0 0 0;
+  font-family: $heading-font;
+  font-size: 2.6rem;
+  color: $headings;
+}
+
+.SectionDescription {
+  margin: 2rem 0 0 0;
+  font-family: $description-font;
+  font-size: 1rem;
+  color: $paragraph;
+  line-height: 1.7rem;
+  text-align: left;
+}
+
+.SedanButton {
+  margin: 2rem 0 0 0;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: 0px;
+  font-family: $description-font;
+  font-size: 1rem;
+  background-color: $headings;
+  color: $orange;
+  @media only screen and (min-width: 1440px) {
+    margin-top: 7rem;
+  }
+}
+
+.SedanButton:hover {
+  background-color: $orange;
+  color: $headings;
+  border: 2px solid $headings;
+  cursor: pointer;
+}
+
+.SuvButton {
+  margin: 2rem 0 0 0;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: 0px;
+  font-family: $description-font;
+  font-size: 1rem;
+  background-color: $headings;
+  color: $light-cyan;
+  @media only screen and (min-width: 1440px) {
+    margin-top: 7rem;
+  }
+}
+
+.SuvButton:hover {
+  background-color: $light-cyan;
+  color: $headings;
+  border: 2px solid $headings;
+  cursor: pointer;
+}
+
+.LuxuryButton {
+  margin: 2rem 0 0 0;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 25px;
+  border: 0px;
+  font-family: $description-font;
+  font-size: 1rem;
+  background-color: $headings;
+  color: $dark-cyan;
+  @media only screen and (min-width: 1440px) {
+    margin-top: 7rem;
+  }
+}
+
+.LuxuryButton:hover {
+  background-color: $dark-cyan;
+  color: $headings;
+  border: 2px solid $headings;
+  cursor: pointer;
+}
+
+.accent {
+  color: $orange;
+
+}
+
+.attribution {
+  display: block;
+  font-family: $description-font;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
